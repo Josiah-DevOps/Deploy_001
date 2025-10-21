@@ -75,7 +75,7 @@ echo " Docker setup found!"
 # ------------------------
 # 4. Test SSH connection
 # ------------------------
-echo "🔗 Testing SSH connection..."
+echo " Testing SSH connection..."
 if ssh -i "$SSH_KEY_PATH" -o BatchMode=yes -o ConnectTimeout=5 "$USERNAME@$SERVER_IP" "echo Connected!" >/dev/null 2>&1; then
   echo " SSH connection successful!"
 else
